@@ -1,6 +1,15 @@
 
+  html, body {
+    overflow-x: hidden;
+  
+
+  }
+  
+
 .websiteBody{
-  margin: 0;
+  /* /* margin: 0; */
+  width: 100%;
+  min-height: 100%; 
 }
 
 
@@ -358,6 +367,7 @@
     font-weight:400;
     font-size:16px;
     line-height:24px;
+    border: none;
 }
 .outer_q17{
     position:relative;
@@ -521,12 +531,12 @@
     position:relative;
     z-index:42;
     pointer-events:auto;
-    margin-left:53px;
+    /* margin-left:53px; */
     width:214px;
     min-width:214px;
     height:46px;
-    margin-top:-76px;
-    margin-bottom:30px;
+    margin-top:-76px; 
+ margin-bottom:30px;
     min-height:46px;
 }
 .outer_q25{
@@ -1095,7 +1105,11 @@
     font-weight:400;
     font-size:16px;
     line-height:24px;
+    width: 33em;
+    height: 100%;
+    border: none;
 }
+
 .outer_q53{
     position:relative;
     display:flex;
@@ -1284,6 +1298,7 @@
     margin-bottom:0px;
     min-height:46px;
 }
+
 .outer_q62{
     position:relative;
     display:flex;
@@ -1302,6 +1317,7 @@
     margin-bottom:0px;
     min-height:46px;
 }
+
 .outer_q63{
     position:relative;
     display:flex;
@@ -1317,6 +1333,8 @@
     height:34.78260869565217%;
     margin-top:32.608695652173914%;
 }
+
+
 .outer_q64{
     position:absolute;
     display:flex;
@@ -1498,8 +1516,8 @@ a{
 font-family: Arial;
 font-style: normal;
 font-weight: normal;
-font-size: 16px;
-line-height: 28px;
+/* font-size: 16px; */
+/* line-height: 28px; */
 /* identical to box height, or 175% */
 
 
@@ -1513,8 +1531,8 @@ a:hover{
 font-family: Arial;
 font-style: normal;
 font-weight: normal;
-font-size: 16px;
-line-height: 28px;
+/* font-size: 16px; */
+/* line-height: 28px; */
 /* identical to box height, or 175% */
 
 text-decoration-line: underline;
@@ -1529,8 +1547,8 @@ a:active{
 font-family: Arial;
 font-style: normal;
 font-weight: normal;
-font-size: 16px;
-line-height: 28px;
+/* font-size: 16px; */
+/* line-height: 28px; */
 /* identical to box height, or 175% */
 
 text-decoration-line: underline;
@@ -1549,4 +1567,77 @@ color: #233759;
       @media screen and (min-width:800px) {
             #q2 {display: none !important;}
           }
-          
+/* The container */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 3px;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #4066A5;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+
+    
+  
